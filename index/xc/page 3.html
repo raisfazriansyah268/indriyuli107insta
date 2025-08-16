@@ -514,34 +514,16 @@ document.addEventListener('DOMContentLoaded', () => loadFeed2());
 <script type="text/javascript" src="//www.highperformanceformat.com/c2f47feba449a83a1b30572823b59474/invoke.js"></script>
 -->
 </div>
-<!-- untuk warna acak ekseskusi file.css -->
-<script>
-// Fungsi acak warna HEX tapi menghindari putih / abu terang
-function getRandomColor() {
-  let color, r, g, b, brightness;
-  do {
-    r = Math.floor(Math.random() * 256);
-    g = Math.floor(Math.random() * 256);
-    b = Math.floor(Math.random() * 256);
-    brightness = (r*299 + g*587 + b*114) / 1000; 
-    // semakin tinggi nilai, semakin terang
-  } while (brightness > 220); // hindari putih/abu terang
 
-  color = "#" + 
-    r.toString(16).padStart(2, "0") + 
-    g.toString(16).padStart(2, "0") + 
-    b.toString(16).padStart(2, "0");
-  return color;
-}
-
-// Terapkan ke CSS variable
-document.addEventListener("DOMContentLoaded", function() {
-  const randomColor = getRandomColor();
-  document.documentElement.style.setProperty("--dynamic-color", randomColor);
-});
-</script>
 
 </body>
 </html>
+
+
+
+
+
+
+
 
 
